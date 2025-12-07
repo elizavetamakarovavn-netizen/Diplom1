@@ -32,7 +32,7 @@ public class BurgerGetReceiptParameterizedTest {
         this.expectedReceipt = expectedReceipt;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Bun: {0}, Price: {1}, Ingredients: {2}")
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
                 {
